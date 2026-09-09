@@ -1,0 +1,15 @@
+# Virtual machine images and temporary disks
+*.vmdk
+*.vmem
+*.nvram
+*.iso
+*.ova
+*.ovf
+
+# Operating system noise
+.DS_Store
+Thumbs.db
+
+# Logs and secrets
+*.log
+.env
