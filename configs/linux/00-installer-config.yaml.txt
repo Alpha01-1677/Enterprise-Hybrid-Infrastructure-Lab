@@ -10,3 +10,12 @@ network:
           via: 192.168.10.2
       nameservers:
         addresses: [192.168.10.10, 8.8.8.8]
+
+
+
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 22/tcp comment 'SSH'
+sudo ufw allow 80/tcp comment 'Nginx HTTP'
+sudo ufw allow 3000/tcp comment 'Grafana UI'
+sudo ufw enable
